@@ -27,6 +27,14 @@ a[target="_blank"] {
   border-bottom: 1px dotted;
 }
 
+
+/* DRY Classes ------------- */
+
+.br {
+  
+  border-radius: .5em;
+}
+
 .avatar {
   
   display: block;
@@ -35,9 +43,10 @@ a[target="_blank"] {
 }
 
 .rounded {
-  border-radius: 50%
+  border-radius: 50%;
     
 }
+
 
 
 .btn {
@@ -54,4 +63,46 @@ a[target="_blank"] {
 .btn:hover {
 
 opacity: .75em;
+}l
+
+.default {
+  background: #52bab3;
+  
 }
+
+.error { 
+  background-color: #ff784f;
+}
+
+@media(min-width: 769px) {
+
+.inln {
+  
+    width: auto;
+    display: inline-block;
+  }
+  
+  .btn + .btn {
+  
+  margin-left: 20px;
+  
+}
+
+}
+
+/* Combinators------------- */
+
+form > a {
+  font-size: .7em;
+}
+
+h1 ~ label {
+  
+  background: tomato;
+  color: white;
+  padding: 5px;
+  
+  
+  
+}
+
